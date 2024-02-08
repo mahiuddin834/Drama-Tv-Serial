@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/child_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgCard"
+            android:layout_width="230dp"
+            android:layout_height="135dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/child_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/play_button"
+                    app:tint="@color/white" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Movie Name"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imgCard"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

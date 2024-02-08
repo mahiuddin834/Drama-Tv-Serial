@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DramaSerialActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:src="@drawable/back"
+
+                />
+
+            <TextView
+                android:id="@+id/dramaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Drama Name"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drama_episodeRV"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+</RelativeLayout>

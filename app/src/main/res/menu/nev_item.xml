@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+
+        android:id="@+id/grp1"
+        android:checkableBehavior="single"
+        >
+
+
+    <item
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:checkable="true"
+
+
+        />
+        <item
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Today Exclusive"
+            android:icon="@drawable/fire"
+            android:checkable="true"
+
+            />
+
+    <item
+        android:id="@+id/bangla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Bangla"
+        android:icon="@drawable/drama"
+        android:checkable="true"
+
+        />
+
+        <item
+            android:id="@+id/hindi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Hindi"
+            android:icon="@drawable/drama"
+            android:checkable="true"
+
+            />
+
+        <item
+            android:id="@+id/banglaDub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Bangla Dubbing"
+            android:icon="@drawable/drama"
+            android:checkable="true"
+
+            />
+
+
+        <item
+            android:id="@+id/hindiDub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Hindi Dubbing"
+            android:icon="@drawable/drama"
+            android:checkable="true"
+
+            />
+
+
+
+
+
+
+    </group>
+
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/feedBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Rate Us"
+            android:icon="@drawable/star"
+            android:checkable="true"
+
+            />
+
+
+
+    </group>
+
+
+</menu>
